@@ -486,4 +486,4 @@ watch_dict_df = pd.DataFrame(watches_dict)
 # set [reference_number] as id index
 roger_dubuis_df = watch_dict_df.set_index('reference_number')
 # to convert data i extracted to csv file
-roger_dubuis_df.to_csv('roger_dubuis_dataset.csv', encoding='utf-8-sig')
+roger_dubuis_df.to_csv('roger_dubuis_dataset.csv', mode='w', encoding='utf-8-sig')
